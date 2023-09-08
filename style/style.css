@@ -1,0 +1,62 @@
+/* Define color variables */
+:root {
+    --primary-bg-color: #222E50;
+    --text-color: #fff;
+    --hover-color: #FCCB06;
+    --background-color: #f2f2f2;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg-color);
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary-bg-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+/* Add this custom CSS to prevent the color change after click */
+.navbar a.nav-link {
+    color: var(--text-color); /* Use your desired link color */
+    transition: none; /* Remove transition */
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+.navbar a.nav-link:hover {
+    color: var(--hover-color); /* Use your desired link hover color */
+}
+
+
+.navbar span {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+/* carousal design */
+
+.carousel-inner img {
+    border-radius: 15px; /* Adjust the radius value as needed */
+}
+
